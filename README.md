@@ -1,2 +1,2 @@
-# tomy_rich_media
+# Tomy
 Rich Media unit for Tomy
