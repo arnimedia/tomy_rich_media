@@ -1,0 +1,477 @@
+
+.centerThisVertical {
+    top: 50%;
+    -webkit-transform: translateY(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translateY(-50%); /* IE 9 */
+    -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+         transform: translateY(-50%); /* IE 10, Fx 16+, Op 12.1+ */
+    position: absolute;
+}
+
+.centerThisHorizontal {
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translateX(-50%); /* IE 9 */
+    -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+         transform: translateX(-50%); /* IE 10, Fx 16+, Op 12.1+ */
+    position: absolute;
+}
+
+.centerThis {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%); /* IE 10, Fx 16+, Op 12.1+ */
+    position: absolute;
+}
+
+.dontShake {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1)
+}
+
+html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+/************
+TAG STYLES
+ ************/
+html, body{
+  width: 100%;
+  height: 100%;
+  padding-left: 100px;
+}
+
+body {
+	margin: 0px;
+	background-color: #EFEFEF;
+	font-family: Arial, sans-serif;
+}
+
+button {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: none;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	outline: none;
+	user-select: none;
+	background-color: none;
+}
+
+button:hover, button:active {
+	color: #FAF000;
+}
+
+button:active {
+	font-size: 11px;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+}
+
+/*******************
+BANNER STYLES
+*******************/
+#banner {
+	position: absolute;
+	display: block;
+	width: 300px;
+	height: 250px;
+	top: 0px;
+	right: 0px;
+	overflow: hidden;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 0px 1px #e4e4e4 inset;	
+}
+
+#panel {
+	position: absolute;
+	display: none;
+	width: 900px;
+	height: 630px;
+	top: 0px;
+	right: 0px;
+	overflow: hidden;
+	/* opacity: 0; */
+}
+
+#panel-inner{
+	position: absolute;
+	width: 830px;
+	height: 600px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+	background-image: url(../images/panel_bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+
+	right: 15px;
+	top: 15px;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+}
+
+/************************
+CREATIVE CONTENT STYLES
+************************/
+.brand-logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100px;
+	height: 26px;
+	background-image: url(../images/logo.png);
+	background-size: 100px 26px;
+	background-repeat: no-repeat;
+}
+
+#tomy-logo{
+	position: absolute;
+	width: 58px;
+	height: 39px;
+	left: 32px;
+	top: 15px;
+}
+
+#tomy-big{
+	position: absolute;
+	width: 130px;
+	height: 90px;
+	left: 83px;
+    top: 39px;
+}
+
+#train{
+	position: absolute;
+	width: 92px;
+	height: 91px;
+	right: 120px;
+	top: 5px;
+}
+
+#train-big{
+	position: absolute;
+	width: 300px;
+	height: 329px;
+	left: 4px;
+    top: 118px;
+}
+
+#title-intro{
+	position: absolute;
+	width: 95px;
+	height: 59px;
+	right: 18px;
+	top: 10px;
+}
+
+#octopus{
+	position: absolute;
+	width: 95px;
+	height: 95px;
+	right: 3px;
+    bottom: 22px;
+}
+
+#chicken{
+	position: absolute;
+	width: 70px;
+	height: 55px;
+	left: 0px;
+    bottom: 18px;
+}
+
+
+#penguin{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: -10px;
+    bottom: 93px;
+}
+
+#blink{
+	position: absolute;
+	width: 50px;
+	height: 34px;
+	right: -50px;
+}
+
+#blinkbig{
+	position: absolute;
+	width: 50px;
+	height: 44px;
+	right: -150px;
+}
+
+#cta-bubbles{
+	position: absolute;
+	width: 195px;
+	height: 100px;
+	left: 196px;
+    top: 246px;
+}
+
+#title-big{
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	left: 259px;
+    top: 92px;
+}
+
+.label {
+	font-size: 11px;
+	color: #0D2A4D;
+	position: absolute;
+	left: 10px;
+	top: 36px;
+}
+
+.expand-button {
+	top: 10px;
+	right: 10px;
+	height: 26px;
+	width: 78px;	
+}
+
+.close-button  {
+	top: 30px;
+	right: 40px;
+	height: 20px;
+	width: 20px;
+	display: none;
+	position: absolute;
+	cursor: pointer;
+}
+
+.useraction-button {
+	bottom: 14px;
+	right: 108px;
+	height: 26px;
+	width: 78px;
+}
+
+.clickthrough-button {
+	bottom: 14px;
+	right: 10px;
+	height: 26px;
+	width: 88px;
+}
+
+
+.centered {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+#cta-small{
+	position: absolute;
+	width: 160px;
+	height: 34px;
+	bottom: 10px;
+	background-image: url(../images/cta_small.png);
+	background-position:  center center;
+	background-size: 160px 34px;
+	overflow: hidden;
+}
+
+#clickthroughButton{
+	position: absolute;
+	width: 298px;
+	height: 44px;
+    bottom: 254px;
+    right: 107px;
+	background-image: url(../images/cta_big.png);
+	background-position:  center center;
+	background-size: 298px 44px;
+	overflow: hidden;
+}
+
+#videointro{
+	width: 208px;
+	height: 118px;
+}
+
+.video-container-intro{
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #60beec;
+	padding: 7px;
+	position: absolute;
+	top: 65px;
+}
+
+
+.video-container {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #60beec;
+	padding: 15px;
+	position: absolute;
+	top: 65px;
+	right: 50px;
+	pointer-events: none;
+	
+}
+
+#mute-but{
+	position: absolute;
+	right: 65px;
+    top: 80px;
+}
+
+
+#boxcont{
+	position: absolute;
+	right: 200px;
+	top: 50px;
+}
+
+
+
+
+/* carousel */
+.btnShopNow {
+	position: absolute;
+	left: 40px;
+	top: 166px;
+	width: 109px;
+	height: 31px;
+	background-position: -254px -8px;
+  }
+  #arrL {
+	position: absolute;
+	left: 150px;
+	top: 527px;
+	width: 46px;
+	height: 46px;
+	background-position: -150px -127px;
+  }
+  #arrR {
+	position: absolute;
+	left: 764px;
+	top: 527px;
+	width: 46px;
+	height: 45px;
+	background-position: -764px -127px;
+  }
+  .carouselHeading {
+	position: absolute;
+	left: 7px;
+	top: 131px;
+	width: 172px;
+	height: 36px;
+	background-position: 0px -311px;
+  }
+  .tn_gen {
+	border-width: 0px;
+	border-color: rgba(5, 0, 0, 0);
+	border-style: solid;
+	background-color: transparent;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 172px;
+	height: 212px;
+  }
+  .tnContent_gen {
+	background-color: rgba(255, 255, 255, 0);
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	width: 172px;
+	height: 156px;
+	background-position: 0px 0px;
+  }
+  #tnHolder {
+	position: absolute;
+	left: 217px;
+	top: 381px;
+	width: 528px;
+	height: 212px;
+	overflow: hidden;
+	background-color: rgba(222, 22, 34, 0);
+  }
+  #tnHolderClick {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 875px;
+	height: 170px;
+	overflow: hidden;
+	background-color: rgba(222, 22, 34, 0);
+  }
+  #tnHolderItems {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+  }
+
+
+  .allItems {
+	background-image: url("../images/Tomy_Toomies_REM_allItems-min.png");
+	background-size: 1700px 400px;
+  }
+  .allTns {
+	background-image: url("../images/Tomy_Toomies_REM_allCarousel-min.png");
+	background-size: 1204px 156px;
+  }
+  .allProducts {
+	background-image: url("../images/Tomy_Toomies_REM_product_ufo-min.png");
+	background-size: 820px 456px;
+  }
+
+
+
+  .bubble_gen {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 73px;
+	height: 71px;
+	background-position: -407px 0px;
+  }
+  #bubbleH {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+  }
+  

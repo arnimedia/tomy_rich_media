@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tomy - Expandable</title>
+<link rel="stylesheet" href="styles/reset.css"/>
+<link rel="stylesheet" href="styles/style.css"/>
+<!-- if 'EBAPI' and 'EBCMD' are both in EBModulesToLoad, ensure EBCMD is last -->
+<script>EBModulesToLoad = ['Video','EBAPI','EBCMD'];</script>
+<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
+<script type="text/javascript" src="scripts/localPreview.js"></script>
+<script type="text/javascript" src="scripts/settings.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script src="https://secure-ds.serving-sys.com/BurstingcachedScripts/libraries/jquery/1_11_3/jquery.min.js"></script>
+<script src="https://secure-ds.serving-sys.com/BurstingcachedScripts/libraries/greensock/1_17_0/TweenMax.min.js"></script>
+<script>if(0)EB.initExpansionParams(200, 0, 900, 630);</script><!-- SE -->
+</head>
+<body>
+	<div id="boxcont">
+		<div id="banner">
+			<img src="images/tomy_logotype.png" id="tomy-logo">
+			<img src="images/train.png" id="train">
+			<img src="images/title_intro.png" id="title-intro">
+			<img src="images/octopus.png" id="octopus">
+			<img src="images/penguin.png" id="penguin">
+
+			<div id="video-container-intro" class="video-container-intro centerThisHorizontal">
+				<video id="videointro" poster="images/poster.jpg">
+					<source src='videos/muted/Tomy_Toomies_Train_300x250_video.mp4' type='video/mp4'>
+				</video>
+			</div>
+
+			<img src="images/chicken.png" id="chicken">
+
+			<div id="cta-small" class="centerThisHorizontal">
+				<img src="images/blink.png" id="blink">
+			</div>
+
+		
+		</div>
+		<div id="panel" class="dontShake">
+			<div id="panel-inner"></div>
+
+			<div id="tnHolder">
+					<div id="tnHolderClick"></div>
+					<div id="tnHolderItems"></div>
+			</div>
+	
+			<div id="heroPopUp" class="allItems"></div>
+	
+			<div id="arrL" class="allItems"></div>
+			<div id="arrR" class="allItems"></div>
+
+			<img src="images/train_big.png" id="train-big">
+			<img src="images/tomy_big.png" id="tomy-big">
+			<img src="images/cta_bubbles.png" id="cta-bubbles">
+			<img src="images/title_big.png" id="title-big">
+
+			<div id="bubbleH"></div>
+
+			<div id="video-container" class="video-container">
+				<video id="video" poster="images/poster.jpg">
+					<source src="videos/Tomy_Toomies_REM_video.mp4" type="video/mp4">
+				</video>
+			</div>
+			<img id="mute-but" src="images/but_mute.png">
+
+			<div id="clickthroughButton">
+					<img src="images/blink.png" id="blinkbig">
+			</div>
+
+			<img src="images/close_but.png" id="closeButton" class="close-button">
+
+		</div>
+</div>
+</body>
+</html>
